@@ -25,7 +25,7 @@ public class NoteController {
         Notebook notebook = mainService.getNotebook(notebookId);
         noteService.saveDefault(notebook);
 
-        return "redirect:/books/%d/notes/%d".formatted(notebookId, 1);
+        return "redirect:/";
     }
 
     @GetMapping("/{id}")
